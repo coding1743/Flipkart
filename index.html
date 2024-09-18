@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- css link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- java script link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+</head>
+<style>
+
+</style>
+<body>
+    <!-- nav starts here  -->
+    <nav class="navbar d-flex justify-content-center navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid ">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <a class="navbar-brand" href="#"><img height="30px" src="logo.png" alt=""></a>
+            <form class="d-flex flex-grow-1">
+                <input style="width:1000px" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-info" type="submit">Search</button>
+              </form>  
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"> 
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-outline-info dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" aria-expanded="false">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+                      </svg> Login
+                    </button>
+                    <ul class="dropdown-menu dropdown-menu-lg-end">
+                      <li><button class="dropdown-item" type="button">New User</button></li>
+                      <li><button class="dropdown-item" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+                      </svg> My profile</button></li>
+                      
+                      <li><button class="dropdown-item" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-lg" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2"/>
+                      </svg> Flipkart pluse zone</button></li>
+                      <li><button class="dropdown-item" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-seam" viewBox="0 0 16 16">
+                        <path d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5l2.404.961L10.404 2zm3.564 1.426L5.596 5 8 5.961 14.154 3.5zm3.25 1.7-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464z"/>
+                      </svg> Order</button></li>
+                      <li><button class="dropdown-item" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-heart" viewBox="0 0 16 16">
+                        <path d="m8 2.748-.717-.737C5.6.281 2.514.878 1.4 3.053c-.523 1.023-.641 2.5.314 4.385.92 1.815 2.834 3.989 6.286 6.357 3.452-2.368 5.365-4.542 6.286-6.357.955-1.886.838-3.362.314-4.385C13.486.878 10.4.28 8.717 2.01zM8 15C-7.333 4.868 3.279-3.04 7.824 1.143q.09.083.176.171a3 3 0 0 1 .176-.17C12.72-3.042 23.333 4.867 8 15"/>
+                      </svg> wishlist</button></li>
+                  
+                    <li><button class="dropdown-item" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-gift" viewBox="0 0 16 16">
+                      <path d="M3 2.5a2.5 2.5 0 0 1 5 0 2.5 2.5 0 0 1 5 0v.006c0 .07 0 .27-.038.494H15a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v7.5a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 1 14.5V7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h2.038A3 3 0 0 1 3 2.506zm1.068.5H7v-.5a1.5 1.5 0 1 0-3 0c0 .085.002.274.045.43zM9 3h2.932l.023-.07c.043-.156.045-.345.045-.43a1.5 1.5 0 0 0-3 0zM1 4v2h6V4zm8 0v2h6V4zm5 3H9v8h4.5a.5.5 0 0 0 .5-.5zm-7 8V7H2v7.5a.5.5 0 0 0 .5.5z"/>
+                    </svg> Rewards</button></li>
+              
+                  <li><button class="dropdown-item" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-credit-card" viewBox="0 0 16 16">
+                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v1h14V4a1 1 0 0 0-1-1zm13 4H1v5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1z"/>
+                    <path d="M2 10a1 1 0 0 1 1-1h1a1 1 0 0 1 1 1v1a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1z"/>
+                  </svg> Gift cards</button></li>
+                    </ul>
+                  </div>
+                  </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"> 
+                  <button type="button" class="btn btn-outline-info"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                    <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+                  </svg>cart</button>
+
+                 </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link "><button type="button" class="btn btn-outline-info"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-shop-window" viewBox="0 0 16 16">
+                  <path d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.37 2.37 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0M1.5 8.5A.5.5 0 0 1 2 9v6h12V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5m2 .5a.5.5 0 0 1 .5.5V13h8V9.5a.5.5 0 0 1 1 0V13a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9.5a.5.5 0 0 1 .5-.5"/>
+                </svg> Become a seller</button></a>
+              </li>
+            </ul>
+           
+
+          </div>
+        </div>
+      </nav>
+      <!-- nav ends here  -->
+          <div class="container firstiamges">
+
+            <div class="d-flex justify-content-center g-3">
+              <div class="d-flex flex-row bd-highlight mb-3 g-3">
+          <div class="p-2 bd-highlight">
+            <figure>
+              <img src="./Flipkart/1.webp" alt="">
+              <figcaption>Grocery</figcaption>
+            </figure>
+          </div>
+          
+          <div class="p-2 bd-highlight">
+            <figure>
+              <img src="./Flipkart/2.webp" alt="">
+              <figcaption>Mobile</figcaption>
+            </figure>
+          </div>
+          
+          <div class="p-2 bd-highlight">
+            <figure>
+              <img src="./Flipkart/3.png" alt="">
+              <div class="dropdown">
+                <a class="btn  dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                  Fashion
+                </a>
+              
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <li><a class="dropdown-item" href="#"></a></li>
+                  <li><a class="dropdown-item" href="#"></a></li>
+                  <li><a class="dropdown-item" href="#"></a></li>
+                </ul>
+              </div>
+            </figure>
+          </div>
+          
+          <div class="p-2 bd-highlight">
+            <figure>
+              <img src="./Flipkart/4.png" alt="">
+              <figcaption>Electronics</figcaption>
+            </figure>
+          </div>
+          
+          <div class="p-2 bd-highlight">
+            <figure>
+              <img src="./Flipkart/5.jpg" alt="">
+              <figcaption>Home & Furniture</figcaption>
+            </figure>
+          </div>
+          
+          
+          <div class="p-2 bd-highlight"> <figure>
+            <img src="./Flipkart/6.webp" alt="">
+            <figcaption>Appliances</figcaption>
+          </figure>
+        </div>
+        
+        <div class="p-2 bd-highlight"> <figure>
+          <img src="./Flipkart/7.webp" alt="">
+            <figcaption>Travel</figcaption>
+          </figure>
+        </div>
+        
+        <div class="p-2 bd-highlight">
+          <figure>
+              <img src="./Flipkart/8.png" alt="">
+              <figcaption>Beauty, Toys & More</figcaption>
+            </figure>
+          </div>
+          
+          <div class="p-2 bd-highlight">
+            <figure>
+              <img src="./Flipkart/9.png" alt="">
+              <figcaption>Two Wheelers</figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+      <br><br>
+      <!-- images -->
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./Flipkart/a.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./Flipkart/b.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./Flipkart/c.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./Flipkart/d.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./Flipkart/e.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./Flipkart/f.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <br>
+
+    <!-- Cards -->
+    <div class="row row-cols-1 row-cols-md-6 g-4">
+      <div class="col">
+        <div class="card h-100">
+          <img src="./Flipkart/4-feet-pink-very-beautiful-best-quality-for-special-gift-125-13-original-imafgv92puzkdytg6.jpeg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Giant Teddy Bear</h5>
+            <p>Price : 30$</p>
+            <button class="btn btn-primary">Buy now </button>
+          </div>
+          
+          
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-">
+          <img  src="./Flipkart/bag.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Cute pink bag</h5>
+            <p>Price : 10$</p>
+            <button class="btn btn-primary">Buy now </button>
+          </div>
+          
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="https://roomtery.com/cdn/shop/products/kawaii-flower-plush-pillow-pastel-aesthetic-room-decor-roomtery2.jpg?v=1638522574&width=1946" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Colorful Flower Pillow</h5>
+            <p>Price : 15$</p>
+            <button class="btn btn-primary">Buy now </button>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100">
+          <img src="./Flipkart/teddy.webp" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Cute Christamas Teddy Bears </h5>
+            <p>Price : 5$</p>
+            <button class="btn btn-primary">Buy now </button>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-100">
+          <img src="https://m.media-amazon.com/images/I/618VQ1iu2OL.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Pretty Phone Case </h5>
+            <p>Price : 10$</p>
+            <button class="btn btn-primary">Buy now </button>
+          </div>
+          
+        </div>
+      </div>
+
+
+      <div class="col">
+        <div class="card h-100">
+          <img src="https://www.dormvibes.com/cdn/shop/products/pink-tie-dye-micromink-faux-fur-bean-bag-chair-cozy-seating-solution-for-living-room-bedroom-or-lounge-area-855274.jpg?v=1691058751" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Tie dye bean bag</h5>
+            <p>Price : 25$</p>
+            <button class="btn btn-primary">Buy now </button>
+          </div>
+
+             <!-- Cards -->  
+            </div>
+          </div>
+          
+          <div class="col">
+            <div class="card h-">
+              <img src="https://m.media-amazon.com/images/I/51u3WlsMdbL._AC_UF894,1000_QL80_.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Cute Water Bottles</h5>
+                <p>Price : 21$</p>
+                <button class="btn btn-primary">Buy now </button>
+              </div>
+    
+                  
+                </div>
+              </div>
+
+              <div class="col">
+                <div class="card h-">
+                  <img src="https://cdn.shopify.com/s/files/1/1558/2319/files/tiny-land-r-trendy-home-style-play-kitchen-tiny-land-1.jpg?v=1690784736" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">Wooden Toy Kitchen</h5>
+                    <p>Price : 69$</p>
+                    <button class="btn btn-primary">Buy now </button>
+                  </div>
+        
+                      
+                    </div>
+                  </div>
+
+                  <div class="col">
+                    <div class="card h-">
+                      <img src="https://www.blippo.com/cdn/shop/collections/kuromi_1024x1024.jpg?v=1685430311" class="card-img-top" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Karomi Stationary</h5>
+                        <p>Price : 22$</p>
+                        <button class="btn btn-primary">Buy now </button>
+                      </div>
+            
+                          
+                        </div>
+                      </div>
+
+                      <div class="col">
+                        <div class="card h-">
+                          <img src="https://m.media-amazon.com/images/I/71j8vp+Z64L._AC_UF894,1000_QL80_.jpg" class="card-img-top" alt="...">
+                          <div class="card-body">
+                            <h5 class="card-title">Stationary</h5>
+                            <p>Price : 19$</p>
+                            <button class="btn btn-primary">Buy now </button>
+                          </div>
+                
+                              
+                            </div>
+                          </div>
+
+                          <div class="col">
+                            <div class="card h-">
+                              <img src="https://www.static-src.com/wcsstore/Indraprastha/images/catalog/full//90/MTA-8564200/oem_5x-moveable-14-joints-1-12-baby-doll-3d-eyes-fashion-toy-girls-diy-accs_full02.jpg" class="card-img-top" alt="...">
+                              <div class="card-body">
+                                <h5 class="card-title">Cute Toy Dolls</h5>
+                                <p>Price : 20$</p>
+                                <button class="btn btn-primary">Buy now </button>
+                              </div>
+                    
+                                  
+                                </div>
+                              </div>
+
+                              <div class="col">
+                                <div class="card h-">
+                                  <img src="https://i5.walmartimages.com/asr/397ada6b-cb61-414d-93a6-32b402aced7e.179d46bd14b87fd53617a3d52a327347.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF" class="card-img-top" alt="...">
+                                  <div class="card-body">
+                                    <h5 class="card-title">Kids Makeup</h5>
+                                    <p>Price : 29$</p>
+                                    <button class="btn btn-primary">Buy now </button>
+                                  </div>
+                        
+                                      
+                                    </div>
+                                  </div>
+
+                            
+        </div>
+      </div>
+    </div>
+
+<!-- Cardds 2 -->
+<div class="container">
+  
+  <div class="row">
+    <div class="col-4">
+      <div class="container">
+        <div class="row row-cols-2">
+          <div class="col"> <div class="card h-">
+            <img src="https://rukminim2.flixcart.com/image/850/1000/k1qr5ow0/watch/6/c/f/tls-w0674g7-guess-original-imafh89hkfmvvajr.jpeg?q=90&crop=false" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Watch For Boys</h5>
+              <p>Price : 150$</p>
+              <button class="btn btn-primary">Buy now </button>
+            </div>
+    
+                
+              </div>
+            </div>
+          <div class="col">
+            <div class="card h-">
+              <img src="https://images.thelittlegreenbag.nl/media/catalog/product/cache/28aa9a1908c4dd1b9d654c32e7abf3e1/f/s/fs5841.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Watch For Men</h5>
+                <p>Price : 105$</p>
+                <button class="btn btn-primary">Buy now </button>
+              </div>
+      
+                  
+                </div>
+          </div>
+          <div class="col">
+            <div class="card h-">
+              <img src="https://m.media-amazon.com/images/I/71-WnBxWDVL._AC_UY1000_.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Watch For Girls</h5>
+                <p>Price : 110$</p>
+                <button class="btn btn-primary">Buy now </button>
+              </div>
+      
+                  
+                </div>
+          </div>
+          <div class="col">
+            <div class="card h-">
+              <img src="https://i.ebayimg.com/images/g/YdwAAOSwNZpk5G~s/s-l1200.webp" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Watch For Kids</h5>
+                <p>Price : 150$</p>
+                <button class="btn btn-primary">Buy now </button>
+              </div>
+      
+                  
+                </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="col-8">
+      <div class="card h-">
+        <img src="https://m.media-amazon.com/images/I/71Yh7eBZxML._AC_UY900_.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Watch</h5>
+          <p>Price : 200$</p>
+          <button class="btn btn-primary">Buy now </button>
+        </div>
+
+            
+          </div>
+
+          
+    </div>
+  </div>
+</div>
+
+<!-- Cards2 -->
+<div class="row row-cols-1 row-cols-md-6 g-4">
+  <div class="col">
+    <div class="card h-100">
+      <img src="https://i.etsystatic.com/28070796/r/il/855703/3599068007/il_570xN.3599068007_36r1.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Wood Desk organizer</h5>
+        <p>Price : 60$</p>
+        <button class="btn btn-primary">Buy now </button>
+      </div>
+      
+      
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-">
+      <img  src="https://thegadgetflow.com/wp-content/uploads/2021/11/The-coolest-office-desk-accessories-and-gadgets-you-can-gift-this-Christmas-blog-featured.jpeg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">Cool Keyboard</h5>
+        <p>Price : Free!!!</p>
+        <button class="btn btn-primary">Buy now </button>
+      </div>
+    </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-">
+        <img  src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1603420709-VynvjArray_1-(1).jpg?crop=1xw:1.00xh;center,top&resize=980:*" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Gray Desk organizer</h5>
+          <p>Price : 80$</p>
+          <button class="btn btn-primary">Buy now </button>
+        </div>
+      </div>
+      </div>
+
+      <div class="col">
+        <div class="card h-">
+          <img  src="https://i.ebayimg.com/images/g/newAAOSw-pFk6iX8/s-l1200.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Rose gold Supplies</h5>
+            <p>Price : 50$</p>
+            <button class="btn btn-primary">Buy now </button>
+          </div>
+        </div>
+        </div>
+
+        <div class="col">
+          <div class="card h-">
+            <img  src="https://ctl.s6img.com/society6/img/pjKzYsjWFwOo4D3EPr4m53fRipk/w_700/prints/~artwork/s6-original-art-uploads/society6/uploads/misc/29a6b0636755450b88fc981d67133435/~~/office-wall-art-do-it-with-passion-or-not-at-alloffice-signhome-office-deskmotivational-quotepr-prints.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Wall Art</h5>
+              <p>Price : 60$</p>
+              <button class="btn btn-primary">Buy now </button>
+            </div>
+          </div>
+          </div>
+
+          <div class="col">
+            <div class="card h-">
+              <img  src="https://m.media-amazon.com/images/I/519SVvPrDGL._AC_UF894,1000_QL80_.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Desk organizer</h5>
+                <p>Price : 40$</p>
+                <button class="btn btn-primary">Buy now </button>
+              </div>
+            </div>
+            </div>
+            </div>
+          <br>
+          <br>
+
+            <footer class="footer navbar navbar-dark bg-dark"> 
+              <div class="container"> 
+                <div class="row">
+                  <div class="col-md-2"> 
+                    <h6>ABOUT</h6> 
+                    <ul class="list-unstyled">
+                       <li><a href="#">Contact Us</a></li> 
+                       <li><a href="#">About Us</a></li> 
+                       <li><a href="#">Careers</a></li> 
+                       <li><a href="#">Flipkart Stories</a></li> 
+                       <li><a href="#">Press</a></li> 
+                       <li><a href="#">Corporate Information</a></li> 
+                      </ul> 
+                    </div> 
+                      <div class="col-md-2"> 
+                        <h6>GROUP COMPANIES</h6> 
+                        <ul class="list-unstyled"> 
+                          <li><a href="#">Myntra</a></li> 
+                          <li><a href="#">Cleartrip</a></li> 
+                          <li><a href="#">Shopsy</a></li> 
+                        </ul> 
+                      </div>
+                      <div class="col-md-2"> 
+                        <h6>GROUP COMPANIES</h6> 
+                        <ul class="list-unstyled"> 
+                          <li><a href="#">Myntra</a></li> 
+                          <li><a href="#">Cleartrip</a></li> 
+                          <li><a href="#">Shopsy</a></li> 
+                        </ul> 
+                      </div>
+                      <div class="col-md-2"> 
+                        <h6>GROUP COMPANIES</h6> 
+                        <ul class="list-unstyled"> 
+                          <li><a href="#">Myntra</a></li> 
+                          <li><a href="#">Cleartrip</a></li> 
+                          <li><a href="#">Shopsy</a></li> 
+                        </ul> 
+                      </div>
+                      <div class="col-md-2"> 
+                        <h6>GROUP COMPANIES</h6> 
+                        <ul class="list-unstyled"> 
+                          <li><a href="#">Myntra</a></li> 
+                          <li><a href="#">Cleartrip</a></li> 
+                          <li><a href="#">Shopsy</a></li> 
+                        </ul> 
+                      </div>
+                      </div>
+                      </div>
+                      </div>
+
+</body>
+</html>
